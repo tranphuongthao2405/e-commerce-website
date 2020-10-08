@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./App.css";
+import Cart from "./Screen/Cart";
 import Home from "./Screen/Home";
 import Product from "./Screen/Product";
 
@@ -43,6 +44,7 @@ const App = () => {
         <main className="main">
           <div className="content">
             <Route path="/product/:id" component={Product} />
+            <Route path="/cart/:id?" component={Cart} />
             <Route path="/" exact={true} component={Home} />
           </div>
         </main>

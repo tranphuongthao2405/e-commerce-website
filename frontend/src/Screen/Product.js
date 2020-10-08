@@ -56,7 +56,7 @@ const Product = (props) => {
                 Trạng thái: {product.quantity > 0 ? "Còn hàng" : "Hết hàng"}
               </li>
               <li>
-                Số lượng:
+                Số lượng:{" "}
                 <select
                   value={quantity}
                   onChange={(e) => setQuantity(e.target.value)}
